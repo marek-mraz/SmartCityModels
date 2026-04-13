@@ -1,0 +1,14 @@
+{
+  "$id": "https://schemas.your-enterprise.com/SmartCity/User/schema.json",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "title": "Name or Pseudonym" },
+    "accountType": { 
+      "type": "string", 
+      "title": "Account Type",
+      "enum":["Citizen", "Official"]
+    },
+    "submitted": { "type": "string", "title": "Submitted Feedback" }
+  },
+  "required": ["name"]
+}

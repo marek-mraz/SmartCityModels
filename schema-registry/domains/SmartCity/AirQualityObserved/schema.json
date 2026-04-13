@@ -1,0 +1,13 @@
+{
+  "$id": "https://schemas.your-enterprise.com/SmartCity/AirQualityObserved/schema.json",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "title": "Name" },
+    "pm10": { "type": "number", "title": "PM 10" },
+    "pm25": { "type": "number", "title": "PM 2.5" },
+    "no2": { "type": "number", "title": "NO2" },
+    "dateObserved": { "type": "string", "format": "date-time", "title": "Date Observed" },
+    "refDevice": { "type": "string", "title": "Reference Device" }
+  },
+  "required": ["name"]
+}

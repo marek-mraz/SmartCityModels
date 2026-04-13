@@ -1,0 +1,29 @@
+{
+  "type": "Categorization",
+  "elements":[
+    {
+      "type": "Category",
+      "label": "Device Info",
+      "elements":[
+        { "type": "Control", "scope": "#/properties/name" },
+        { "type": "Control", "scope": "#/properties/category" },
+        { "type": "Control", "scope": "#/properties/controlledProperty" },
+        {
+          "type": "Control",
+          "scope": "#/properties/installedDuring",
+          "options": {
+            "customType": "Relationship",
+            "targetType": "ProjectActivity"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Category",
+      "label": "Location",
+      "elements":[
+        { "type": "Control", "scope": "#/properties/location" }
+      ]
+    }
+  ]
+}

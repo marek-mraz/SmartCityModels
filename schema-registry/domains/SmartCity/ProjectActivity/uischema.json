@@ -1,0 +1,30 @@
+{
+  "type": "VerticalLayout",
+  "elements":[
+    { "type": "Control", "scope": "#/properties/name" },
+    { "type": "Control", "scope": "#/properties/activityType" },
+    {
+      "type": "HorizontalLayout",
+      "elements":[
+        { "type": "Control", "scope": "#/properties/startDate" },
+        { "type": "Control", "scope": "#/properties/endDate" }
+      ]
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/isActivityOf",
+      "options": {
+        "customType": "Relationship",
+        "targetType": "Project"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/procuredAsset",
+      "options": {
+        "customType": "Relationship",
+        "targetType": "Device"
+      }
+    }
+  ]
+}

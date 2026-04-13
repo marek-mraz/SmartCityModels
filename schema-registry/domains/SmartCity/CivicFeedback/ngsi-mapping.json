@@ -1,0 +1,7 @@
+{
+  "name": "Property",
+  "description": "Property",
+  "sentiment": "Property",
+  "relatesToProject": "Relationship",
+  "submittedBy": "Relationship"
+}

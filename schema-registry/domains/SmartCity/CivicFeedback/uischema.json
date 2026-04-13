@@ -1,0 +1,24 @@
+{
+  "type": "VerticalLayout",
+  "elements":[
+    { "type": "Control", "scope": "#/properties/name" },
+    { "type": "Control", "scope": "#/properties/description", "options": { "multi": true } },
+    { "type": "Control", "scope": "#/properties/sentiment" },
+    {
+      "type": "Control",
+      "scope": "#/properties/relatesToProject",
+      "options": {
+        "customType": "Relationship",
+        "targetType": "Project"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/submittedBy",
+      "options": {
+        "customType": "Relationship",
+        "targetType": "User"
+      }
+    }
+  ]
+}

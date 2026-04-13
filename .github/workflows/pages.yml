@@ -1,0 +1,54 @@
+name: Deploy Schema Registry to Pages
+
+on:
+  push:
+    branches: ["main"]
+  workflow_dispatch:
+
+permissions:
+  contents: read
+  pages: write
+  id-token: write
+
+concurrency:
+  group: "pages"
+  cancel-in-progress: false
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+    steps:
+      - name: Checkout
+        uses: actions/checkout@v4
+
+      - name: Generate index.json
+        run: |
+          python3 -c '
+          import os, json
+          base_dir = "schema-registry"
+          domains_dir = os.path.join(base_dir, "domains")
+          registry_index = []
+          for root, dirs, files in os.walk(domains_dir):
+              if "schema.json" in files:
+                  type_name = os.path.basename(root)
+                  # Path relative to the published root (schema-registry folder)
+                  rel_path = os.path.relpath(root, base_dir)
+                  registry_index.append({
+                      "typeName": type_name,
+                      "path": f"/{rel_path}"
+                  })
+          with open(os.path.join(base_dir, "index.json"), "w") as f:
+              json.dump(registry_index, f, indent=2)
+          '
+
+      - name: Setup Pages
+        uses: actions/configure-pages@v4
+
+      - name: Upload artifact
+        uses: actions/upload-pages-artifact@v3
+        with:
+          path: './schema-registry'
+
+      - name: Deploy to GitHub Pages
+        id: deployment
+        uses: actions/deploy-pages@v4

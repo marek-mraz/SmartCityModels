@@ -1,0 +1,8 @@
+{
+  "name": "Property",
+  "description": "Property",
+  "projectStatus": "Property",
+  "budget": "Property",
+  "hasActivity": "Relationship",
+  "location": "GeoProperty"
+}
