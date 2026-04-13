@@ -1,0 +1,36 @@
+{
+  "$id": "https://schemas.your-enterprise.com/InteligentneMesto/Projekt/schema.json",
+  "type": "object",
+  "properties": {
+    "nazov": { "type": "string", "title": "Názov" },
+    "popis": { "type": "string", "title": "Popis" },
+    "stavProjektu": {
+      "type": "string",
+      "title": "Stav projektu",
+      "enum":["plánovaný", "prebiehajúci", "dokončený"]
+    },
+    "rozpocet": { "type": "number", "title": "Rozpočet" },
+    "maAktivitu": { "type": "string", "title": "Aktivity" },
+    "lokalita": {
+      "type": "object",
+      "title": "Lokalita (GeoJSON Polygón)",
+      "properties": {
+        "type": { "type": "string", "enum": ["Polygon"] },
+        "coordinates": {
+          "type": "array",
+          "items": {
+            "type": "array",
+            "minItems": 4,
+            "items": {
+              "type": "array",
+              "minItems": 2,
+              "maxItems": 2,
+              "items": { "type": "number" }
+            }
+          }
+        }
+      }
+    }
+  },
+  "required": ["nazov"]
+}

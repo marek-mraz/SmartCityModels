@@ -1,0 +1,8 @@
+{
+  "spz": "Property",
+  "znacka": "Property",
+  "model": "Property",
+  "rokVyroby": "Property",
+  "majitel": "Relationship",
+  "lokalita": "GeoProperty"
+}

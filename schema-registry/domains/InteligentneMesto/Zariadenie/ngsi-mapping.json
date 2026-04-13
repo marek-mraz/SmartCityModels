@@ -1,0 +1,7 @@
+{
+  "nazov": "Property",
+  "kategoria": "Property",
+  "kontrolovanaVlastnost": "Property",
+  "lokalita": "GeoProperty",
+  "instalovanePocas": "Relationship"
+}

@@ -1,0 +1,30 @@
+{
+  "type": "Categorization",
+  "elements":[
+    {
+      "type": "Category",
+      "label": "Detaily projektu",
+      "elements":[
+        { "type": "Control", "scope": "#/properties/nazov" },
+        { "type": "Control", "scope": "#/properties/popis", "options": { "multi": true } },
+        { "type": "Control", "scope": "#/properties/stavProjektu" },
+        { "type": "Control", "scope": "#/properties/rozpocet" },
+        {
+          "type": "Control",
+          "scope": "#/properties/maAktivitu",
+          "options": {
+            "customType": "Relationship",
+            "targetType": "Aktivita"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Category",
+      "label": "Lokalita",
+      "elements":[
+        { "type": "Control", "scope": "#/properties/lokalita" }
+      ]
+    }
+  ]
+}

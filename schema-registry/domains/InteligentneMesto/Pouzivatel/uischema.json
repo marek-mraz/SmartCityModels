@@ -1,0 +1,15 @@
+{
+  "type": "VerticalLayout",
+  "elements":[
+    { "type": "Control", "scope": "#/properties/meno" },
+    { "type": "Control", "scope": "#/properties/typUctu" },
+    {
+      "type": "Control",
+      "scope": "#/properties/odoslal",
+      "options": {
+        "customType": "Relationship",
+        "targetType": "SpatnaVazba"
+      }
+    }
+  ]
+}

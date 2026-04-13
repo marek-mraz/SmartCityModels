@@ -1,0 +1,30 @@
+{
+  "type": "VerticalLayout",
+  "elements":[
+    { "type": "Control", "scope": "#/properties/nazov" },
+    { "type": "Control", "scope": "#/properties/typAktivity" },
+    {
+      "type": "HorizontalLayout",
+      "elements":[
+        { "type": "Control", "scope": "#/properties/datumZaciatku" },
+        { "type": "Control", "scope": "#/properties/datumKonca" }
+      ]
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/jeAktivitouProjektu",
+      "options": {
+        "customType": "Relationship",
+        "targetType": "Projekt"
+      }
+    },
+    {
+      "type": "Control",
+      "scope": "#/properties/obstaranyMajetok",
+      "options": {
+        "customType": "Relationship",
+        "targetType": "Zariadenie"
+      }
+    }
+  ]
+}

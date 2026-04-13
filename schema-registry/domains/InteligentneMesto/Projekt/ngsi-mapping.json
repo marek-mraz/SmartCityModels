@@ -1,0 +1,8 @@
+{
+  "nazov": "Property",
+  "popis": "Property",
+  "stavProjektu": "Property",
+  "rozpocet": "Property",
+  "maAktivitu": "Relationship",
+  "lokalita": "GeoProperty"
+}

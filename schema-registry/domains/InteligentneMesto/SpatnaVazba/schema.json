@@ -1,0 +1,12 @@
+{
+  "$id": "https://schemas.your-enterprise.com/InteligentneMesto/SpatnaVazba/schema.json",
+  "type": "object",
+  "properties": {
+    "nazov": { "type": "string", "title": "Titulok" },
+    "popis": { "type": "string", "title": "Popis" },
+    "sentiment": { "type": "string", "title": "Sentiment" },
+    "suvisiSProjektom": { "type": "string", "title": "Súvisí s projektom" },
+    "odoslanePouzivatelom": { "type": "string", "title": "Odoslané používateľom" }
+  },
+  "required": ["nazov"]
+}

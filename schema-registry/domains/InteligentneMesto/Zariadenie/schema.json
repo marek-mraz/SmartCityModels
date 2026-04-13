@@ -1,0 +1,32 @@
+{
+  "$id": "https://schemas.your-enterprise.com/InteligentneMesto/Zariadenie/schema.json",
+  "type": "object",
+  "properties": {
+    "nazov": { "type": "string", "title": "Názov" },
+    "kategoria": {
+      "type": "array",
+      "items": { "type": "string" },
+      "title": "Kategória"
+    },
+    "kontrolovanaVlastnost": {
+      "type": "array",
+      "items": { "type": "string" },
+      "title": "Kontrolovaná vlastnosť"
+    },
+    "lokalita": {
+      "type": "object",
+      "title": "Lokalita (GeoJSON Bod)",
+      "properties": {
+        "type": { "type": "string", "enum": ["Point"] },
+        "coordinates": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "type": "number" }
+        }
+      }
+    },
+    "instalovanePocas": { "type": "string", "title": "Inštalované počas aktivity" }
+  },
+  "required": ["nazov"]
+}
