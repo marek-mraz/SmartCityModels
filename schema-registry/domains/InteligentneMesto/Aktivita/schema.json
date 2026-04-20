@@ -2,12 +2,10 @@
   "$id": "https://schemas.your-enterprise.com/InteligentneMesto/Aktivita/schema.json",
   "type": "object",
   "properties": {
-    "nazov": { "type": "string", "title": "Názov" },
     "typAktivity": { "type": "string", "title": "Typ aktivity" },
     "datumZaciatku": { "type": "string", "format": "date", "title": "Dátum začiatku" },
     "datumKonca": { "type": "string", "format": "date", "title": "Dátum konca" },
     "jeAktivitouProjektu": { "type": "string", "title": "Materský projekt" },
     "obstaranyMajetok": { "type": "string", "title": "Obstaraný majetok (Zariadenie/Nábytok)" }
-  },
-  "required": ["nazov"]
+  }
 }

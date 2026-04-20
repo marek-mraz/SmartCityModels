@@ -2,7 +2,6 @@
   "$id": "https://schemas.your-enterprise.com/InteligentneMesto/Projekt/schema.json",
   "type": "object",
   "properties": {
-    "nazov": { "type": "string", "title": "Názov" },
     "popis": { "type": "string", "title": "Popis" },
     "stavProjektu": {
       "type": "string",
@@ -31,6 +30,5 @@
         }
       }
     }
-  },
-  "required": ["nazov"]
+  }
 }

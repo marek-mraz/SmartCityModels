@@ -2,13 +2,11 @@
   "$id": "https://schemas.your-enterprise.com/InteligentneMesto/Pouzivatel/schema.json",
   "type": "object",
   "properties": {
-    "meno": { "type": "string", "title": "Meno alebo Pseudonym" },
     "typUctu": { 
       "type": "string", 
       "title": "Typ účtu",
       "enum":["Občan", "Úradník"]
     },
     "odoslal": { "type": "string", "title": "Odoslaná spätná väzba" }
-  },
-  "required": ["meno"]
+  }
 }

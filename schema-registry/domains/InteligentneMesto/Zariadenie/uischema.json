@@ -5,7 +5,6 @@
       "type": "Category",
       "label": "Informácie o zariadení",
       "elements":[
-        { "type": "Control", "scope": "#/properties/nazov" },
         { "type": "Control", "scope": "#/properties/kategoria" },
         { "type": "Control", "scope": "#/properties/kontrolovanaVlastnost" },
         {

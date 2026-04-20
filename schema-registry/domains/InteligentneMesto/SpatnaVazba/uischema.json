@@ -1,7 +1,6 @@
 {
   "type": "VerticalLayout",
   "elements":[
-    { "type": "Control", "scope": "#/properties/nazov" },
     { "type": "Control", "scope": "#/properties/popis", "options": { "multi": true } },
     { "type": "Control", "scope": "#/properties/sentiment" },
     {

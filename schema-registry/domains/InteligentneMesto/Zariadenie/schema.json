@@ -2,7 +2,6 @@
   "$id": "https://schemas.your-enterprise.com/InteligentneMesto/Zariadenie/schema.json",
   "type": "object",
   "properties": {
-    "nazov": { "type": "string", "title": "Názov" },
     "kategoria": {
       "type": "array",
       "items": { "type": "string" },
@@ -27,6 +26,5 @@
       }
     },
     "instalovanePocas": { "type": "string", "title": "Inštalované počas aktivity" }
-  },
-  "required": ["nazov"]
+  }
 }
