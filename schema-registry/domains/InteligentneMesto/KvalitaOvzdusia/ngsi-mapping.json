@@ -1,7 +1,0 @@
-{
-  "pm10": "Property",
-  "pm25": "Property",
-  "no2": "Property",
-  "datumPozorovania": "Property",
-  "refZariadenie": "Relationship"
-}
