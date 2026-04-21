@@ -1,8 +1,0 @@
-{
-  "name": "Property",
-  "activityType": "Property",
-  "startDate": "Property",
-  "endDate": "Property",
-  "isActivityOf": "Relationship",
-  "procuredAsset": "Relationship"
-}

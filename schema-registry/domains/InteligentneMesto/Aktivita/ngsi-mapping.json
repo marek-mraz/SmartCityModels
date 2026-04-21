@@ -1,7 +1,0 @@
-{
-  "typAktivity": "Property",
-  "datumZaciatku": "Property",
-  "datumKonca": "Property",
-  "jeAktivitouProjektu": "Relationship",
-  "obstaranyMajetok": "Relationship"
-}

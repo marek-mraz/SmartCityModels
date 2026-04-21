@@ -1,8 +1,0 @@
-{
-  "name": "Property",
-  "pm10": "Property",
-  "pm25": "Property",
-  "no2": "Property",
-  "dateObserved": "Property",
-  "refDevice": "Relationship"
-}
