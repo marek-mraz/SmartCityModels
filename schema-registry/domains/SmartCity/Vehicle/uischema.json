@@ -1,0 +1,33 @@
+{
+  "type": "Categorization",
+  "elements":[
+    {
+      "type": "Category",
+      "label": "Vehicle Info",
+      "elements":[
+        { "type": "Control", "scope": "#/properties/name" },
+        { "type": "Control", "scope": "#/allOf/3/properties/vehicleType" },
+        { "type": "Control", "scope": "#/allOf/3/properties/category" },
+        { "type": "Control", "scope": "#/allOf/3/properties/vehiclePlateIdentifier" },
+        {
+          "type": "Control",
+          "scope": "#/allOf/3/properties/refVehicleModel",
+          "options": {
+            "customType": "Relationship",
+            "targetType": "VehicleModel"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Category",
+      "label": "Status & Telemetry",
+      "elements":[
+        { "type": "Control", "scope": "#/allOf/3/properties/speed" },
+        { "type": "Control", "scope": "#/allOf/3/properties/battery" },
+        { "type": "Control", "scope": "#/allOf/3/properties/serviceStatus" },
+        { "type": "Control", "scope": "#/properties/location" }
+      ]
+    }
+  ]
+}
