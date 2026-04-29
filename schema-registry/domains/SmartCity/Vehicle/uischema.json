@@ -6,26 +6,32 @@
       "label": "Vehicle Info",
       "elements":[
         { "type": "Control", "scope": "#/properties/name" },
-        { "type": "Control", "scope": "#/allOf/3/properties/vehicleType" },
-        { "type": "Control", "scope": "#/allOf/3/properties/category" },
-        { "type": "Control", "scope": "#/allOf/3/properties/vehiclePlateIdentifier" },
+        { "type": "Control", "scope": "#/properties/vehiclePlateIdentifier" },
+        { "type": "Control", "scope": "#/properties/vehicleType" },
+        { "type": "Control", "scope": "#/properties/category" },
+        { "type": "Control", "scope": "#/properties/serviceStatus" },
+        { "type": "Control", "scope": "#/properties/speed" },
+        { "type": "Control", "scope": "#/properties/cargoWeight" }
+      ]
+    },
+    {
+      "type": "Category",
+      "label": "Relationships",
+      "elements":[
         {
           "type": "Control",
-          "scope": "#/allOf/3/properties/refVehicleModel",
+          "scope": "#/properties/refVehicleModel",
           "options": {
             "customType": "Relationship",
-            "targetType": "VehicleModel"
+            "targetType": "Device"
           }
         }
       ]
     },
     {
       "type": "Category",
-      "label": "Status & Telemetry",
+      "label": "Location",
       "elements":[
-        { "type": "Control", "scope": "#/allOf/3/properties/speed" },
-        { "type": "Control", "scope": "#/allOf/3/properties/battery" },
-        { "type": "Control", "scope": "#/allOf/3/properties/serviceStatus" },
         { "type": "Control", "scope": "#/properties/location" }
       ]
     }
