@@ -13,6 +13,7 @@
         "customType": "Relationship",
         "targetType": "Device"
       }
-    }
+    },
+    { "type": "Control", "scope": "#/properties/location" }
   ]
 }

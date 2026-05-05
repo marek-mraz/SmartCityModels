@@ -4,5 +4,6 @@
   "pm25": "Property",
   "no2": "Property",
   "dateObserved": "Property",
-  "refDevice": "Relationship"
+  "refDevice": "Relationship",
+  "location": "GeoProperty"
 }
