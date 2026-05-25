@@ -1,0 +1,10 @@
+{
+  "name": "Property",
+  "description": "Property",
+  "startDate": "Property",
+  "endDate": "Property",
+  "eventStatus": "Property",
+  "maximumAttendeeCapacity": "Property",
+  "organizer": "Relationship",
+  "location": "GeoProperty"
+}

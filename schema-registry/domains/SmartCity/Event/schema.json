@@ -1,0 +1,27 @@
+{
+  "$id": "https://schemas.your-enterprise.com/SmartCity/Event/schema.json",
+  "type": "object",
+  "properties": {
+    "name": { "type": "string", "title": "Name" },
+    "description": { "type": "string", "title": "Description" },
+    "startDate": { "type": "string", "format": "date-time", "title": "Start Date" },
+    "endDate": { "type": "string", "format": "date-time", "title": "End Date" },
+    "eventStatus": { "type": "string", "title": "Event Status" },
+    "maximumAttendeeCapacity": { "type": "integer", "title": "Maximum Attendee Capacity" },
+    "organizer": { "type": "string", "title": "Organizer" },
+    "location": {
+      "type": "object",
+      "title": "Location (GeoJSON Point)",
+      "properties": {
+        "type": { "type": "string", "enum": ["Point"] },
+        "coordinates": {
+          "type": "array",
+          "minItems": 2,
+          "maxItems": 2,
+          "items": { "type": "number" }
+        }
+      }
+    }
+  },
+  "required": ["name", "startDate"]
+}

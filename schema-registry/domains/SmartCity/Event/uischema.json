@@ -1,0 +1,43 @@
+{
+  "type": "Categorization",
+  "elements": [
+    {
+      "type": "Category",
+      "label": "Event Details",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/name" },
+        { "type": "Control", "scope": "#/properties/description", "options": { "multi": true } },
+        {
+          "type": "HorizontalLayout",
+          "elements": [
+            { "type": "Control", "scope": "#/properties/startDate" },
+            { "type": "Control", "scope": "#/properties/endDate" }
+          ]
+        },
+        { "type": "Control", "scope": "#/properties/eventStatus" },
+        { "type": "Control", "scope": "#/properties/maximumAttendeeCapacity" }
+      ]
+    },
+    {
+      "type": "Category",
+      "label": "Relationships",
+      "elements": [
+        {
+          "type": "Control",
+          "scope": "#/properties/organizer",
+          "options": {
+            "customType": "Relationship",
+            "targetType": "User"
+          }
+        }
+      ]
+    },
+    {
+      "type": "Category",
+      "label": "Location",
+      "elements": [
+        { "type": "Control", "scope": "#/properties/location" }
+      ]
+    }
+  ]
+}
